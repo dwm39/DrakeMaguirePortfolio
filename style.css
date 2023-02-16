@@ -331,6 +331,10 @@ nav .fas{
     display: none;
 }
 
+.gitHub {
+    height: 30px;
+}
+
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/phone.png);
