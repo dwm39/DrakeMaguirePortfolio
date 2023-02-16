@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/myLogo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact/Resume</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student at University of Pittsburgh</p>
+                <h1>Hi, I'm <span>Drake</span><br>Maguire from the U.S</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/thatsMe.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, my name is Drake Maguire. I am a current sophomore at the University of Pittsburgh
+                        studying Computer Science. Outside of school I have been doing my own research and learning by
+                        doing certificates on freeCodeCamp and even learning some frameworks. I am currently both a
+                        full-time student and
+                        a part-time worker. My dream is to eventually become a software engineer. But besides that, I am
+                        also interested in the
+                        cyber security sector.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java, JavaScript, Python</li>
+                            <li><span>Scripts</span><br>HTML, CSS</li>
+                            <li><span>Other</span><br>JavaFX and (Scene Builder)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Undergraduate TA for Computer Programming at University
+                                of Pittsburgh</li>
+                            <li><span>2022 - Current</span><br>Team Member at Target</li>
+                            <li><span>2021 - 2022</span><br>Student Concierge at University of Pittsburgh</li>
+                            <li><span>2020 - 2021</span><br>Child Care Worker at Cynthia Frank's Childcare</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Bachelors of Science in Computer Science <br> University of
+                                Pittsburgh: 3.93 GPA</li>
+                            <li><span>2021</span><br>Central Catholic High School <br> 4.75 GPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cProject.jpg">
+                    <div class="layer">
+                        <h3>Really Long Integer Calculator</h3>
+                        <p>A program that can add, subtract, and compare very large numbers using a custom made
+                            datructure in Java.
+                        </p>
+                        <a href="https://github.com/dwm39/Really-Long-Integer-Calculator"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/testing56.webp">
+                    <div class="layer">
+                        <h3>Car App</h3>
+                        <p>A program displaying an interactive interface that shows the picture of the car, a
+                            description, price, add-ons, coolor, and type in java using javaFX and scene builder.
+                        </p>
+                        <a href="https://github.com/dwm39/Car-Application"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tProject.png" class = "tester">
+                    <div class="layer">
+                        <h3>Taylor Series Graph</h3>
+                        <p> An API that displays both the approximation and sine graph by asking the user to input the graph's 
+                            desired domain and number of terms. 
+                        </p>
+                        <a href="https://github.com/dwm39/Taylor-Series-Sine-Graph"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/dwm39" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> drakemag113@gmail.com </p>
+                    <p><i class="fas fa-phone-square-alt"></i> 412-804-1680</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/dwm39"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/drake-maguire/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Maguire Drake Resume - CC.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxTB5zpdEFjWe5BcP6076DfHIkH63fM25eDsXHKiRNPN7SsmrPG-Z9rSXGli_6xqj5aQ/exec' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
