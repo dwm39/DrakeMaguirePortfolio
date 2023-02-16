@@ -334,7 +334,23 @@ nav .fas{
 .gitHub {
     height: 30px;
 }
+.myLogo {
+    height: 22px;
+    margin-right: 10px;
+}
 
+.myLogo2 {
+    height: 27px;
+    margin-right: 10px;
+}
+
+.eLink {
+    object-fit: contain;
+    padding-top: 15px;
+    padding-right: 0px;
+    height: 40px;
+    width: 500px;
+}
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/phone.png);
