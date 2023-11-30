@@ -194,15 +194,10 @@
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                     if (response.ok) {
-                        msg.innerHTML = "Message sent successfully";
-                    } else {
-                        msg.innerHTML = "Failed to send message. Please try again later.";
-                    }
-                    // msg.innerHTML = "Message sent successfully"
-                    // setTimeout(function () {
-                    //     msg.innerHTML = "timed out"
-                    // }, 5000)
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
