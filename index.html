@@ -196,7 +196,7 @@
                 .then(response => {
                     msg.innerHTML = "Message sent successfully"
                     setTimeout(function () {
-                        msg.innerHTML = ""
+                        msg.innerHTML = "timed out"
                     }, 5000)
                     form.reset()
                 })
